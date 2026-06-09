@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --neon-color: #D3FF6B;
+  --neon-glow: rgba(211, 255, 107, 0.2);
+  --neon-text-glow: rgba(211, 255, 107, 0.5);
+}
+
+html.light, :root.light {
+  --neon-color: #0097ab;
+  --neon-glow: rgba(0, 151, 171, 0.2);
+  --neon-text-glow: rgba(0, 151, 171, 0.5);
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-cosmic: #030510;
+  --color-mars: #B04303;
+  --color-mars-dark: #691E06;
+  --color-neon: var(--neon-color);
+  --color-text-glow: #E7F1F3;
+}
+
+/* Custom glowing effects */
+.glow-mars {
+  box-shadow: 0 0 20px rgba(176, 67, 3, 0.3);
+}
+
+.glow-neon {
+  box-shadow: 0 0 20px var(--neon-glow);
+}
+
+.glow-text-neon {
+  text-shadow: 0 0 10px var(--neon-text-glow);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-cosmic);
+  color: var(--color-text-glow);
+}
+

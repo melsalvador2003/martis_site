@@ -1,0 +1,6 @@
+{
+  "name": "Martis",
+  "description": "Estufas modulares inteligentes que unem engenharia aeroespacial e inteligência artificial para produzir alimentos em ambientes extremos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
